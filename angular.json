@@ -34,6 +34,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/images",
+                "output": "/assets/images"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/sounds",
+                "output": "/assets/sounds"
               }
             ],
             "styles": [
@@ -97,6 +107,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/images",
+                "output": "/assets/images"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/sounds",
+                "output": "/assets/sounds"
               }
             ],
             "styles": [
@@ -107,5 +127,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2a486f6c-0100-4a6a-a141-09128bf5affc"
   }
 }

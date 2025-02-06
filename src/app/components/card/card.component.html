@@ -1,0 +1,11 @@
+<a href="" class="container-card" (mouseenter)="playSound()">
+  <img class="image-card" [src]="gameCover" alt="game cover">
+
+  <app-card-label [gameLabel]="gameLabel"></app-card-label>
+
+  <app-card-pricing
+    [gameCondition]="gameCondition"
+    [gameType]="gameType"
+    [gamePrice]="gamePrice">
+  </app-card-pricing>
+</a>
