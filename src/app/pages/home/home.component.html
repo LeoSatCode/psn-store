@@ -1,36 +1,13 @@
 <div class="container-home">
 
 	<app-card
-	gameCover="assets/images/gow.webp"
-	gameLabel="Cross Buy"
-	gameCondition="Compre Agora!"
-	gameType="Completo | PS4 | PS5"
-	gamePrice="349,99"
-	>
-	</app-card>
-
-	<app-card
-	gameCover="assets/images/hzd.jpg"
-	gameLabel="Exclusivo"
-	gameCondition="Jogue Agora!"
-	gameType="Completo | PS4"
-	gamePrice="289,99"
-	>
-	</app-card>
-
-	<app-card
-	gameCover="assets/images/cod.jpg"
-	gameCondition="Jogue Agora!"
-	gameType="Completo | PS4 | PS5"
-	gamePrice="259,99"
-	>
-	</app-card>
-
-	<app-card
-	gameCover="assets/images/rob.jpg"
-	gameCondition="Jogue Agora!"
-	gameType="Completo | PS4 | PS5"
-	gamePrice="Gratuito"
+	*ngFor="let card of cardDataFake"
+		[cardId]="card.id"
+		[gameCover]="card.gameCover"
+		[gameLabel]="card.gameLabel"
+		[gameCondition]="card.gameCondition"
+		[gameType]="card.gameType"
+		[gamePrice]="card.gamePrice"
 	>
 	</app-card>
 
