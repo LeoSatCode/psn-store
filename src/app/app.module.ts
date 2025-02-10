@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,11 @@ import { CardLabelComponent } from './components/card/card-label/card-label.comp
 import { CardPricingComponent } from './components/card/card-pricing/card-pricing.component';
 import { ContentComponent } from './pages/content/content.component';
 import { BuyCardComponent } from './pages/content/buy-card/buy-card.component';
+import { TitleCardComponent } from './pages/content/title-card/title-card.component';
+import { NgxStarsModule } from 'ngx-stars';
+import { DescriptionComponent } from './pages/content/description/description.component';
+import { TrailerComponent } from './pages/content/trailer/trailer.component';
+import { TagComponent } from './pages/content/tag/tag.component';
 
 
 @NgModule({
@@ -21,16 +27,26 @@ import { BuyCardComponent } from './pages/content/buy-card/buy-card.component';
     CardLabelComponent,
     CardPricingComponent,
     ContentComponent,
-		BuyCardComponent
+		BuyCardComponent,
+  	TitleCardComponent,
+   	DescriptionComponent,
+   	TrailerComponent,
+    TagComponent,
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+		NgxStarsModule
+
   ],
   providers: [
     provideClientHydration(withEventReplay())
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
+
+
 export class AppModule { }
