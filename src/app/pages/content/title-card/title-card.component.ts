@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-title-card',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./title-card.component.css']
 })
 export class TitleCardComponent {
+
+	@Input() title: string = "";
+  @Input() fiche: string = "";
+  @Input() company: string = "";
 
 	constructor(){}
 

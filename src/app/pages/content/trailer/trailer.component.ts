@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-trailer',
-  standalone: false,
+	standalone: false,
   templateUrl: './trailer.component.html',
-  styleUrl: './trailer.component.css'
+  styleUrls: ['./trailer.component.css']
 })
 export class TrailerComponent {
-
+  @Input() trailer: string = "";
 }

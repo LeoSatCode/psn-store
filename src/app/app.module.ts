@@ -16,6 +16,7 @@ import { NgxStarsModule } from 'ngx-stars';
 import { DescriptionComponent } from './pages/content/description/description.component';
 import { TrailerComponent } from './pages/content/trailer/trailer.component';
 import { TagComponent } from './pages/content/tag/tag.component';
+import { SafeUrlPipe } from '../pipes/safe-url.pipe';
 
 
 @NgModule({
@@ -32,13 +33,15 @@ import { TagComponent } from './pages/content/tag/tag.component';
    	DescriptionComponent,
    	TrailerComponent,
     TagComponent,
+	
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-		NgxStarsModule
+		NgxStarsModule,
+		SafeUrlPipe
 
   ],
   providers: [

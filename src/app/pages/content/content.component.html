@@ -1,7 +1,7 @@
 <div class="container-content">
-<app-buy-card></app-buy-card>
-<app-title-card></app-title-card>
-<app-description></app-description>
-<app-trailer></app-trailer>
-<app-tag></app-tag>
+  <app-buy-card [imageBuy]="imageBuy" [buttonBuy]="buttonBuy" [price]="price"></app-buy-card>
+  <app-title-card [title]="title" [fiche]="fiche" [company]="company"></app-title-card>
+  <app-description [description]="description"></app-description>
+  <app-tag [tag]="tag" [tagWarning]="tagWarning"></app-tag>
+  <app-trailer [trailer]="trailer"></app-trailer>
 </div>
