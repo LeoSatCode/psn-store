@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Check out the repository
       uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -27,13 +29,9 @@ jobs:
     - name: Build the project
       run: ng build --configuration production --base-href /psn-store/
 
-    - name: Configure Git
-      run: |
-        git config --global user.email "leosatcode@gmail.com"
-        git config --global user.name "LeoSatCode"
-
     - name: Deploy to GitHub Pages
       run: |
-        git remote rm origin
-        git remote add origin https://LeoSatCode:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/LeoSatCode/psn-store.git
+        git config --global user.email "your-email@example.com"
+        git config --global user.name "LeoSatCode"
+        git remote set-url origin https://LeoSatCode:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/LeoSatCode/psn-store.git
         npx gh-pages -d dist/psn-store -b gh-pages
