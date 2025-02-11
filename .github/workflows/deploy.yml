@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # Atualize para a versão 18
+        node-version: '18'
 
     - name: Install Angular CLI
       run: npm install -g @angular/cli
@@ -31,4 +31,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: main  
         publish_dir: ./dist/psn-store
