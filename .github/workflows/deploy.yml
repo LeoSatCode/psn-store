@@ -33,8 +33,7 @@ jobs:
         git config --global user.name "LeoSatCode"
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: gh-pages 
-        publish_dir: ./dist/psn-store
+      run: |
+        git remote rm origin
+        git remote add origin https://LeoSatCode:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/LeoSatCode/psn-store.git
+        npx gh-pages -d dist/psn-store -b gh-pages
