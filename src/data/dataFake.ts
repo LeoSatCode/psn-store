@@ -53,7 +53,8 @@ export const dataFake = [
 		fiche: 'PS4 | 35.5GB | 23.10.2019 |',
 		company: 'SANTA MONICA LCC',
 
-		description: `Experimente uma Campanha visceral ou monte sua equipe em uma derradeira experiência online com diversos desafios de Operações Especiais e uma mistura de mapas e modos Multijogador.`,
+		description: `Experimente uma campanha visceral repleta de momentos intensos, onde cada decisão tem consequências e a linha entre certo e errado se torna turva. Mergulhe em uma narrativa cinematográfica que o colocará na pele de soldados de elite em missões ao redor do mundo, desde operações táticas em áreas urbanas até combates intensos em regiões de conflito.
+		Monte sua equipe e enfrente uma derradeira experiência online, onde a adrenalina corre solta e cada partida é uma nova oportunidade de mostrar suas habilidades. Desafie-se em Operações Especiais, missões cooperativas que exigem estratégia e coordenação para vencer hordas de inimigos. Explore uma vasta seleção de mapas e modos Multijogador, cada um oferecendo uma nova forma de jogar e uma nova estratégia para dominar. Desde combates rápidos e frenéticos em pequenas arenas até batalhas estratégicas em cenários abertos, a diversidade de modos garante horas de diversão e desafio contínuo.`,
 
 		tag: '18',
 		tagWarning: 'Drogas Lícitas, Linguagem Imprópria, Violência Extrema',
@@ -71,7 +72,9 @@ export const dataFake = [
 		fiche: 'PS4 | PS5 | 22.7GB | 10.10.2023 |',
 		company: 'ROBLOX',
 
-		description: `Roblox é o universo virtual definitivo que permite que você jogue, crie e seja tudo que puder imaginar. Junte-se a milhões de jogadores e descubra uma variedade infinita de mundos imersivos criados por uma comunidade global!`,
+		description: `Roblox é o universo virtual definitivo que permite que você jogue, crie e seja tudo que puder imaginar. É um mundo onde a única limitação é sua imaginação. Junte-se a milhões de jogadores em uma plataforma que oferece uma infinidade de experiências, desde jogos de aventura e simulação até mundos de construção e exploração.
+		Descubra uma variedade infinita de mundos imersivos criados por uma comunidade global de desenvolvedores talentosos. Cada jogo em Roblox é uma nova oportunidade para explorar e experimentar algo único. Participe de aventuras épicas, construa seu próprio império, ou simplesmente socialize com amigos em ambientes virtuais. Além de jogar, você também pode criar seus próprios jogos e compartilhá-los com a comunidade, utilizando ferramentas poderosas e intuitivas.
+		Seja você um aventureiro em busca de novas experiências, um criador com grandes ideias ou simplesmente alguém que deseja se divertir, Roblox oferece um espaço acolhedor e infinitas possibilidades. Entre e descubra um mundo de criatividade e diversão sem limites!`,
 
 		tag: '12',
 		tagWarning: 'Linguagem Imprópria',
