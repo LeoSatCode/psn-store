@@ -1,0 +1,44 @@
+.container{
+	position: absolute;
+	margin-top: 220px;
+
+	color: antiquewhite;
+
+
+
+
+}
+
+.title h3 {
+	font-family:'Noto Sans';
+	font-size: 45px;
+	font-weight: 300;
+}
+
+.fiche {
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+
+}
+
+.fiche p {
+	font-family: 'Segoe UI';
+
+	margin-left: 2px;
+}
+
+
+.stars{
+	margin-top: 7.5px;
+	margin-left: 10px;
+}
+
+.company p {
+	font-family: 'Segoe UI';
+
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+

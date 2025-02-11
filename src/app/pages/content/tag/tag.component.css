@@ -1,0 +1,38 @@
+.container-tag {
+	display: flex;
+	position: absolute;
+
+	margin-top: 360px;
+	margin-left: 430px;
+	width: 50px;
+	height: 50px;
+
+	border: 2px solid gray;
+	border-radius: .5rem;
+	background-color: inherit;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.container-tag h2 {
+	font-family: "Segoe UI";
+	color: antiquewhite;
+	background-color: inherit;
+
+	overflow: hidden;
+}
+
+.p {
+	display: flex;
+	position: absolute;
+
+	margin-top: 372px;
+	margin-left: 490px;
+
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: antiquewhite;
+
+	width: 280px;
+}

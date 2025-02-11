@@ -1,4 +1,4 @@
-<a href="" class="container-card" (mouseenter)="playSound()">
+<a [routerLink]="['/content', cardId]" class="container-card" (mouseenter)="playSound()" (click)="playClickSound()">
   <img class="image-card" [src]="gameCover" alt="game cover">
 
   <app-card-label [gameLabel]="gameLabel"></app-card-label>

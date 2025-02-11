@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { cardDataFake } from '../../../data/cardDataFake';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+	@Input() cardId: string = "";
   @Input() gameCover: string = "";
   @Input() gameLabel: string = "";
   @Input() gameCondition: string = "";
@@ -16,10 +18,26 @@ export class CardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+		const card = cardDataFake.find(card => card.id === this.cardId);
+		if (card) {
+			this.gameCover = card.gameCover;
+			this.gameLabel = card.gameLabel;
+			this.gameCondition = card.gameCondition;
+			this.gameType = card.gameType;
+			this.gamePrice = card.gamePrice;
+		}
+	}
 
   playSound(): void {
-    const audio = new Audio('assets/sounds/ps-store.ogg');
+    const audio = new Audio('assets/sounds/ps-store.mp3');
+    audio.play().catch(error => {
+      console.error('Error playing sound:', error);
+    });
+  }
+
+	playClickSound(): void {
+    const audio = new Audio('assets/sounds/click.mp3');
     audio.play().catch(error => {
       console.error('Error playing sound:', error);
     });
