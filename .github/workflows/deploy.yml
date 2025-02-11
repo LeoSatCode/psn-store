@@ -29,6 +29,12 @@ jobs:
 
     - name: Configure Git
       run: |
-        git config --global user.email "your-email@example.com"
+        git config --global user.email "leosatcode@gmail.com"
         git config --global user.name "LeoSatCode"
 
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages 
+        publish_dir: ./dist/psn-store
