@@ -5,7 +5,7 @@ export const cardDataFake = [
 		"gameLabel":"Cross Buy",
 		"gameCondition":"Compre Agora!",
 		"gameType":"Completo | PS4 | PS5",
-		"gamePrice":"349,99",
+		"gamePrice":"R$349,99",
 	},
 
 	{
@@ -14,7 +14,7 @@ export const cardDataFake = [
 		"gameLabel":"Exclusivo",
 		"gameCondition":"Jogue Agora!",
 		"gameType":"Completo | PS4",
-		"gamePrice":"289,99",
+		"gamePrice":"R$199,50",
 	},
 
 	{
@@ -22,8 +22,8 @@ export const cardDataFake = [
 		"gameCover":"assets/images/cod.jpg",
 		"gameLabel":"",
 		"gameCondition":"Jogue Agora!",
-		"gameType":"Completo | PS4 | PS5",
-		"gamePrice":"259,99",
+		"gameType":"Completo | PS4 ",
+		"gamePrice":"R$274,00",
 	},
 
 	{

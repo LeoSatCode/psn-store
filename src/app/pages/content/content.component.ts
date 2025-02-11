@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-content',
   standalone: false,
   templateUrl: './content.component.html',
-  styleUrl: './content.component.css'
+  styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
 

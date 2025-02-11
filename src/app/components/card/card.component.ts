@@ -30,7 +30,14 @@ export class CardComponent implements OnInit {
 	}
 
   playSound(): void {
-    const audio = new Audio('assets/sounds/ps-store.ogg');
+    const audio = new Audio('assets/sounds/ps-store.mp3');
+    audio.play().catch(error => {
+      console.error('Error playing sound:', error);
+    });
+  }
+
+	playClickSound(): void {
+    const audio = new Audio('assets/sounds/click.mp3');
     audio.play().catch(error => {
       console.error('Error playing sound:', error);
     });

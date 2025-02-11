@@ -33,7 +33,7 @@ import { SafeUrlPipe } from '../pipes/safe-url.pipe';
    	DescriptionComponent,
    	TrailerComponent,
     TagComponent,
-	
+
 
 
   ],

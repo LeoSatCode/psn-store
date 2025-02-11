@@ -9,7 +9,7 @@
 
 	border: 2px solid gray;
 	border-radius: .5rem;
-	background-color: black;
+	background-color: inherit;
 
 	align-items: center;
 	justify-content: center;
@@ -18,12 +18,12 @@
 .container-tag h2 {
 	font-family: "Segoe UI";
 	color: antiquewhite;
-	background-color: black;
+	background-color: inherit;
 
 	overflow: hidden;
 }
 
-.p{
+.p {
 	display: flex;
 	position: absolute;
 
