@@ -13,7 +13,7 @@ jobs:
     - name: Check out the repository
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use o token configurado
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
