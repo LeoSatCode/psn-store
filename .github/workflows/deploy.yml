@@ -29,9 +29,15 @@ jobs:
     - name: Build the project
       run: ng build --configuration production --base-href /psn-store/
 
-    - name: Deploy to GitHub Pages
+    - name: Configure Git
       run: |
-        git config --global user.email "your-email@example.com"
+        git config --global user.email "leosatcode@egmail.com"
         git config --global user.name "LeoSatCode"
         git remote set-url origin https://LeoSatCode:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/LeoSatCode/psn-store.git
-        npx gh-pages -d dist/psn-store -b gh-pages
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./dist/psn-store
