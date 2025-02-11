@@ -29,6 +29,9 @@ jobs:
     - name: Build the project
       run: ng build --configuration production --base-href /psn-store/
 
+    - name: Add .nojekyll
+      run: echo > ./dist/psn-store/.nojekyll
+
     - name: Configure Git
       run: |
         git config --global user.email "leosatcode@gmail.com"
