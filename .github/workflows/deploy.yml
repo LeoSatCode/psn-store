@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Check out the repository
       uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -31,13 +29,12 @@ jobs:
 
     - name: Configure Git
       run: |
-        git config --global user.email "leosatcode@egmail.com"
+        git config --global user.email "leosatcode@gmail.com"
         git config --global user.name "LeoSatCode"
-        git remote set-url origin https://LeoSatCode:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/LeoSatCode/psn-store.git
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        github_token: ${{ secrets.TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./dist/psn-store
