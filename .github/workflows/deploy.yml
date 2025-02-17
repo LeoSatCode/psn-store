@@ -13,7 +13,7 @@ jobs:
     - name: Check out the repository
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        token: ${{ secrets.QUIZ_TOKEN }}
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -40,6 +40,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        personal_token: ${{ secrets.QUIZ_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./dist/psn-store
